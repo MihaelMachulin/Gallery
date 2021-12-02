@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Emblema One', cursive;
+  overflow: hidden;
+  margin: 0;
+  background: linear-gradient(to right, black, #000011, #000001, crimson);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+  font-weight: bolder;
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  font-size: 45px;
+  transition: 0.3s ease-in 0.1s;
+  background: linear-gradient(to right, #000e52, #000033, crimson);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke:0.01px #d964b8
+}
+
+.slide.loaded {
+  flex: 0.0001;
+  transition: flex 0.3s ease-in 0.1s;
+}
