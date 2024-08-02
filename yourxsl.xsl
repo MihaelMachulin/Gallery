@@ -3,9 +3,9 @@
 <body style="font-family:Arial;font-size:12pt;background-color:#EEEEEE">
 
 <xsl:for-each select="breakfast_menu/food">
-    <p style="background-color:blue;color:cyan">
-     <xsl:value-of select="qqq"/>
-  </p>
+    <div style="background-color:blue;color:cyan">
+     <p><xsl:value-of select="qqq"/></p>
+  </div>
   <div style="background-color:red;color:yellow;padding:4px">
     <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <xsl:value-of select="price"/>
