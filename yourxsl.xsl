@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <body style="font-family:Arial;font-size:12pt;background-color:#EEEEEE">
-    <div style="background-color:blue;color:cyan">
-     <p><xsl:value-of select="breakfast_menu/qqq"/></p>
-  </div>
-<xsl:for-each select="breakfast_menu/food">
 
+<xsl:for-each select="breakfast_menu/food">
+<div style="background-color:blue;color:cyan">
+   <p><xsl:value-of select="qqq"/></p>
+</div>
   <div style="background-color:red;color:yellow;padding:4px">
     <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <xsl:value-of select="price"/>
